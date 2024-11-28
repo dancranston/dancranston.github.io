@@ -4,6 +4,7 @@
 </head>
 <link href="https://fonts.cdnfonts.com/css/Roboto" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB Garamond" rel="stylesheet">
 <style>
 h1, h2, h3, h4, th {
     font-family: 'Roboto-condensed', sans-serif;
@@ -17,8 +18,11 @@ h2 {
 	font-weight: normal;
 }
 ul {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
 	font-size: 18px;
+}
+.math {
+    font-family: EB Garamond; font-size: 18px;
 }
 </style>
 <body>
@@ -62,7 +66,7 @@ But below I highlight a few that I think are particularly worth your time.<br>
 
     <li><a href="https://arxiv.org/abs/1403.0479">Brooks' Theorem and Beyond</a> (with Landon Rabern)<br>
         <br style="line-height: 6px" />
-                We collect some of our favorite proofs of Brooks' Theorem, highlighting advantages and extensions of each. The proofs illustrate some of the major techniques in graph coloring, such as greedy coloring, Kempe chains, hitting sets, and the Kernel Lemma. We also discuss standard strengthenings of vertex coloring, such as list coloring, online list coloring, and Alon--Tarsi orientations, since analogues of Brooks' Theorem hold in each context. We conclude with two conjectures along
+                We collect some of our favorite proofs of Brooks' Theorem, highlighting advantages and extensions of each. The proofs illustrate some of the major techniques in graph coloring, such as greedy coloring, Kempe chains, hitting sets, and the Kernel Lemma. We also discuss standard strengthenings of vertex coloring, such as list coloring, online list coloring, and Alon-Tarsi orientations, since analogues of Brooks' Theorem hold in each context. We conclude with two conjectures along
                 the lines of Brooks' Theorem that are much stronger, the Borodin-Kostochka Conjecture and Reed's Conjecture. <br><br></li>
 </ul>
 <br>
@@ -72,39 +76,46 @@ But below I highlight a few that I think are particularly worth your time.<br>
     <li><a href = "https://arxiv.org/abs/2006.11445">Vertex Partitions into an Independent Set and a Forest with Each Component Small</a> (with Matt Yancey)&nbsp;<a href="slides/vertex-partitions-talk.pdf">slides</a><br>
         <br style="line-height: 6px" />
         I've written a few papers using the <em>potential method</em>, and this is probably my favorite.  This technique is a way to "turbo charge" a discharging proof.  We get more from our induction hypothesis, which allows us to prove stronger results about reducible configurations.  As a consequence, results proved using the potential method are more often sharp (than results proved
-        using discharging, but not using the potential method).<br><br>
+        using discharging, but not using the potential method).<br>
+        <br style="line-height: 7.5px" />
         For each integer k &ge; 2, we determine a sharp bound on mad(G) such that V(G) can be partitioned into sets I and F<sub>k</sub>, where I is an independent set and G[F<sub>k</sub>] is a forest in which each component has at most k vertices. For each k we construct an infinite family of examples showing our result is best possible. Our results imply that every planar graph G of girth at least 9 (resp. 8, 7) has a partition of V(G) into an independent set I and a set F such that G[F] is a forest with each component of order at most 3 (resp. 4, 6).
 Hendrey, Norin, and Wood asked for the largest function g(a,b) such that if mad(G) &lt; g(a,b) then V(G) has a partition into sets A and B such that mad(G[A]) &lt; a and mad(G[B]) &lt; b. They specifically asked for the value of g(1,b), i.e., the case when A is an independent set. Previously, the only values known were g(1,4/3) and g(1,2). We find g(1,b) whenever 4/3 &lt; b &lt; 2. 
 <br><br></li>
-    <li><a href = "https://arxiv.org/abs/1705.05023">Acyclic edge-coloring of planar graphs: &Delta; colors suffice when &Delta; 
+    <li><a href = "https://arxiv.org/abs/1705.05023">Acyclic edge-coloring of planar graphs: <font class="math">&Delta;</font> colors suffice when <font class="math">&Delta;</font> 
             is large</a>&nbsp;<a href="slides/acyclic-talk.pdf">slides</a><br>
         <br style="line-height: 6px" />
-        An <em>acyclic edge-coloring</em> of a graph G is a proper edge-coloring of G such that the subgraph induced by any two color classes is acyclic. The <em>acyclic chromatic index</em>, &chi;'<sub>a</sub>(G), is the smallest number of colors allowing an acyclic edge-coloring of G. Clearly &chi;'<sub>a</sub>(G)&nbsp;&ge;&nbsp;&Delta;(G) for every graph G. Cohen, Havet, and M&uuml;ller conjectured that there exists a constant M such that every planar graph with &Delta;(G)&nbsp;&ge;&nbsp;M has
-        &chi;'<sub>a</sub>(G)&nbsp;=&nbsp;&Delta;(G). We prove this conjecture.<br><br></li>
+        An <em>acyclic edge-coloring</em> of a graph G is a proper edge-coloring of G such that the subgraph induced by any two color classes is acyclic. The <em>acyclic chromatic index</em>, <font class="math">&chi;</font>'<sub>a</sub>(G), is the smallest number of colors allowing an acyclic edge-coloring of G. Clearly <font class="math">&chi;</font>'<sub>a</sub>(G)&nbsp;&ge;&nbsp;<font class="math">&Delta;</font>(G) for every graph G. Cohen, Havet, and M&uuml;ller conjectured that there exists
+        a constant M such that every planar graph with <font class="math">>&Delta;</font>(G)&nbsp;&ge;&nbsp;M has
+        <font class="math">&chi;</font>'<sub>a</sub>(G)&nbsp;=&nbsp;<font class="math">&Delta;</font>(G). We prove this conjecture.<br><br></li>
 
     <li><a href = "https://arxiv.org/abs/1410.7233">Planar graphs are 9/2-colorable</a> (with Landon Rabern)&nbsp;<a href="slides/planar-fractional-talk.pdf">slides</a><br>
         <br style="line-height: 6px" />
         We show that every planar graph G has a 2-fold 9-coloring. In particular, this implies that G has fractional chromatic number at most 9/2. This is the first proof (independent of the 4 Color Theorem) that there exists a constant k&nbsp;&lt;&nbsp;5 such that every planar G has fractional chromatic number at most k. <br><br></li>
 
-    <li><a href = "https://arxiv.org/abs/1305.3526">Graphs with &chi;&nbsp;=&nbsp;&Delta; have big cliques</a> (with Landon Rabern)&nbsp;<a href="slides/big-cliques-talk.pdf">slides</a><br>
+    <li><a href = "https://arxiv.org/abs/1305.3526">Graphs with <font class="math">&chi;</font>&nbsp;=&nbsp;<font class="math">&Delta;</font> have big cliques</a> (with Landon Rabern)&nbsp;<a href="slides/big-cliques-talk.pdf">slides</a><br>
         <br style="line-height: 6px" />
-        Brooks' Theorem states that if a graph has &Delta;&nbsp;&ge;&nbsp;3 and &omega;&nbsp;&le;&nbsp;&Delta;, then &chi;&nbsp;&le;&nbsp;&Delta;. Borodin and Kostochka conjectured that if &Delta;&nbsp;&ge;&nbsp;9 and &omega;&nbsp;&le;&nbsp;&Delta;-1, then &chi;&nbsp;&le;&nbsp;&Delta;-1. We show that if &Delta;&nbsp;&ge;&nbsp;13 and &omega;&nbsp;&le;&nbsp;&Delta;-4, then &chi;&nbsp;&le;&Delta;-1. 
-        For a graph G, let H denote the subgraph of G induced by vertices of degree &Delta;. We also show that if &omega;&nbsp;&le;&nbsp;&Delta;-1 and &omega;(H)&nbsp;&le;&nbsp;&Delta;-6, then &chi;&nbsp;&le;&nbsp;&Delta;-1.<br><br></li>
+        Brooks' Theorem states that if a graph has <font class="math">&Delta;&nbsp;&ge;&nbsp;3</font> and 
+        <font class="math">&omega;&nbsp;&le;&nbsp;&Delta;</font>, then <font class="math">&chi;&nbsp;&le;&nbsp;&Delta;</font>. 
+        Borodin and Kostochka conjectured that if <font class="math">&Delta;&nbsp;&ge;&nbsp;9</font> and 
+        <font class="math">&omega;&nbsp;&le;&nbsp;&Delta;-1</font>, then <font class="math">&chi;&nbsp;&le;&nbsp;&Delta;-1</font>. 
+        We show that if <font class="math">&Delta;&nbsp;&ge;&nbsp;13</font> and <font class="math">&omega;&nbsp;&le;&nbsp;&Delta;-4</font>, then <font class="math">&chi;&nbsp;&le;&Delta;-1</font>. 
+        For a graph G, let H denote the subgraph of G induced by vertices of degree <font class="math">&Delta;</font>. We also show that if <font class="math">&omega;&nbsp;&le;&nbsp;&Delta;-1</font> and <font class="math">&omega;(H)&nbsp;&le;&nbsp;&Delta;-6</font>, then <font class="math">&chi;&nbsp;&le;&nbsp;&Delta;-1.</font><br><br></li>
 
     <li><a href = "https://arxiv.org/abs/2112.07439">Kempe Equivalent List Colorings</a> (with Reem Mahmoud)&nbsp;<a href="slides/swappability-talk.pdf">slides</a><br>
         <br style="line-height: 6px" />
-            An &alpha;,&beta;-Kempe swap in a properly colored graph interchanges the colors on some component of the subgraph induced by colors &alpha; and &beta;. Two k-colorings of a graph are k-Kempe equivalent if we can form one from the other by a sequence of Kempe swaps (never using more than k colors). Las Vergnas and Meyniel showed that if a graph is (k-1)-degenerate, then each pair of its k-colorings are k-Kempe equivalent. Mohar conjectured the same conclusion for connected k-regular
+        An <font class="math">&alpha;,&beta;</font>-Kempe swap in a properly colored graph interchanges the colors on some component of the subgraph induced by colors <font class="math">&alpha;</font> and <font class="math">&beta;</font>. Two k-colorings of a graph are k-Kempe equivalent if we can form one from the other by a sequence of Kempe swaps (never using more than k colors). Las Vergnas and Meyniel showed that if a graph is (k-1)-degenerate, then each pair of its k-colorings are k-Kempe equivalent. Mohar conjectured the same conclusion for connected k-regular
             graphs. This was proved for k&nbsp;=&nbsp;3 by Feghali, Johnson, and Paulusma (with a single exception K<sub>2</sub>&#9744;K<sub>3</sub>, also called the 3-prism) and for k&nbsp;&ge;&nbsp;4 by Bonamy, Bousquet, Feghali, and Johnson.
-            In this paper we prove an analogous result for list-coloring. <br><br></li>
+            In this paper we prove an analogous result for list-coloring. <br>
+        <br style="line-height: 6px" />
 
-            For a list-assignment L and an L-coloring &phi;, a Kempe swap is called L-valid for &phi; if performing the Kempe swap yields another L-coloring. Two L-colorings are called L-equivalent if we can form one from the other by a sequence of L-valid Kempe swaps. Let G be a connected k-regular graph with k&nbsp;&ge;&nbsp;3. We prove that if L is a k-assignment, then all L-colorings are L-equivalent (again with a single exception K<sub>2</sub>&#9744;K<sub>3</sub>).
+        For a list-assignment L and an L-coloring <font class="math">&phi;</font>, a Kempe swap is called L-valid for <font class="math">&phi;</font> if performing the Kempe swap yields another L-coloring. Two L-colorings are called L-equivalent if we can form one from the other by a sequence of L-valid Kempe swaps. Let G be a connected k-regular graph with k&nbsp;&ge;&nbsp;3. We prove that if L is a k-assignment, then all L-colorings are L-equivalent (again with a single exception K<sub>2</sub>&#9744;K<sub>3</sub>).
 When k&nbsp;&ge;&nbsp;4, the proof is completely self-contained, so implies an alternate proof of the result of Bonamy et al.
 Our proofs rely on the following key lemma, which may be of independent interest. Let H be a graph such that for every degree-assignment L<sub>H</sub> all L<sub>H</sub>-colorings are L<sub>H</sub>-equivalent. If G is a connected graph that contains H as an induced subgraph, then for every degree-assignment L<sub>G</sub> for G all L<sub>G</sub>-colorings are L<sub>G</sub>-equivalent. 
 <br><br></li>
 
-    <li><a href = "https://arxiv.org/abs/1508.03663">Planar Graphs of Girth at least Five are Square (&Delta;+2)-Choosable</a> (with Marthe Bonamy and Luke Postle)&nbsp;<a href="slides/square-girth-5-talk.pdf">slides</a><br>
+    <li><a href = "https://arxiv.org/abs/1508.03663">Planar Graphs of Girth at least Five are Square (<font class="math">&Delta;+2</font>)-Choosable</a> (with Marthe Bonamy and Luke Postle)&nbsp;<a href="slides/square-girth-5-talk.pdf">slides</a><br>
         <br style="line-height: 6px" />
-        We prove a conjecture of Dvo&#345;&aacute;k, Kr&aacute;l, Nejedl&yacute;, and &#352;krekovski that planar graphs of girth at least five are square (&Delta;+2)-colorable for large enough &Delta;. In fact, we prove the stronger statement that such graphs are square (&Delta;+2)-choosable and even square (&Delta;+2)-paintable. <br><br></li>
+        We prove a conjecture of Dvo&#345;&aacute;k, Kr&aacute;l, Nejedl&yacute;, and &#352;krekovski that planar graphs of girth at least five are square (<font class="math">&Delta;+2</font>)-colorable for large enough <font class="math">&Delta;</font>. In fact, we prove the stronger statement that such graphs are square (<font class="math">&Delta;+2</font>)-choosable and even square (<font class="math">&Delta;+2</font>)-paintable. <br><br></li>
 </ul>
             </td>
             <td width=26%>
