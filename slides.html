@@ -1,0 +1,350 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Dan Cranston's Slides</title>
+</head>
+<link href="https://fonts.cdnfonts.com/css/Roboto" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB Garamond" rel="stylesheet">
+<style>
+h1, h2, h3, h4, th {
+    font-family: 'Roboto-condensed', sans-serif;
+}
+h1 {
+	font-size: 48px;
+	font-weight: normal;
+}
+h2 {
+	font-size: 36px;
+	font-weight: normal;
+}
+body, ul {
+    font-family: 'Lora', serif;
+	font-size: 18px;
+}
+.math {
+    font-family: EB Garamond; font-size: 18px;
+}
+</style>
+<body>
+       <center>
+    <table style="border: 0px solid black; cell-border: 2px solid black; width: 98%">
+        <tr>
+            <td width=2%>
+                &nbsp;
+            </td>
+            <td width=80%>
+<center>
+<h1>Daniel Cranston's Slides</h1>
+</center>
+<br>
+<P style="font-family: Lora; font-size: 18px">
+<i>Disclaimer:</i> These slides were not designed to be viewed without my 
+narration.  Thus, they are likely at points to be ambiguous. <br>
+Nonetheless, they do provide an overview of the topics covered.  If you 
+want more details, check out the corresponding papers on <a href="http://arxiv.org/a/cranston_d_1.html">arXiv</a>
+or on the page of <a href="writing.html">my writing</a>.
+</P>
+<br>
+
+<h2>Expository</h2>
+<ul>
+<li><a href="slides/k-critical-survey.pdf">A Survey of k-critical Graphs</a><br>
+        <br style="line-height: 6px" /> 
+A graph G is <i>k-critical</i> if G has chromatic number k, but every subgraph of G has chromatic number less than k.
+This is a survey talk on k-critical graphs for a workshop at the American Institute of Mathematics (in Pasadena, CA)
+in October 2024.
+</li>
+<br>
+
+<li><a href="slides/edge-coloring-survey.pdf">Edge-coloring Multigraphs</a><br>
+        <br style="line-height: 6px" />
+This is a 2017 survey talk on edge-coloring both simple graphs and multigraphs (that
+also mentions a few recent results of Landon Rabern and me).  For simple graphs
+we focus on classes where chromatic index equals maximum degree.  For
+multigraphs, we study a powerful recoloring tool, Tashkinov trees.
+</li>
+<br>
+
+<li><a href="slides/moore.pdf">No More Moore Graphs</a><br>
+        <br style="line-height: 6px" />
+This is an expository talk, proving the famous result of Hoffman and Singleton
+that 
+Moore graphs exist only for regular graphs of degree 2, 3, 7, or (possibly) 57.
+</li>
+<br>
+
+<li><a href="slides/bertrands.pdf">A proof of Bertrand's Postulate</a><br>
+        <br style="line-height: 6px" />
+This result states that for every positive integer n, there exists a prime p
+such that n &lt; p &#8804; 2n.  This is an expository talk I gave at
+Davidson, showcasing a beautiful proof due to Erdos.
+Our presentation follows that in "Proofs from the Book". 
+</li>
+<br>
+
+<li><a href="slides/nowhere-zero-talk.pdf">An Introduction to Nowhere-zero
+Flows</a><br>
+        <br style="line-height: 6px" />
+For a planar graph, a nowhere-zero flow is equivalent to a
+face-coloring.  However, they are also defined for non-planar graphs.  In other
+words, nowhere-zero flows generalize the notion of face-coloring to non-planar
+graphs.
+</li>
+<br>
+
+<li><a href="slides/pent_thm.pdf">Euler's Pentagonal Number Theorem</a><br> 
+        <br style="line-height: 6px" />
+This result gives an
+explicit value for each coefficient in the expansion of the infinite
+product &#928;<sub>k&#8805;1</sub>(1-x<sup>k</sup>).  We present a pretty bijective proof
+using integer partitions.
+</li></ul>
+<br>
+
+<h2>Research</h2>
+<font style="font-family: Lora; font-size: 18px">
+Below are the slides from most of my research talks. (But generally only one version of the slides is included, even if I gave the talk multiple times at different venues.)  They appear in approximate reverse chronological order.
+</font>
+<br>
+<br>
+<ul>
+
+
+<li><a href="slides/list-reconfig-talk.pdf">Rosenfeld Counting: Proper Conflict-free Coloring of Graphs with Large Maximum Degree</a><br>
+        <br style="line-height: 6px" />
+A proper conflict-free coloring is a proper coloring such that each non-isolated vertex has a color that is used exactly once on its (open) neighborhood.  We prove that every graph has such a coloring from a list assignment L whenever |L(v)| &ge; 1.656&Delta; when &Delta;, the maximum degree, is big enough.  This talk doubles as an introduction to Rosenfeld counting, which is similar to the 
+Lovasz Local Lemma, but often requires fewer technical details.
+<br><br>
+
+</li><li><a href="slides/squares-2degenerate-talk.pdf">Cliques in Squares of Graphs with Maximum Average Degree less than 4</a><br>
+        <br style="line-height: 6px" />
+We show that if a graph G has maximum average degree less than 4 and maximum degree at most D, then G<sup>2</sup> has clique number
+at most 5D/2+532.  In the special case that G is 2-degenerate, this bound improves to 5D/2+72.  This is best possible up to the additive constant, due to a construction that achieves the lower bound 5D/2.
+<br><br>
+
+</li><li><a href="slides/list-reconfig-talk.pdf">Optimally Reconfiguring List Colorings Given Large Lists</a><br>
+        <br style="line-height: 6px" />
+Let L be a list-assignment with |L(v)|&nbsp;&ge;&nbsp;d(v)&nbsp;+&nbsp;2 for all vertices v of a graph G.  Cambie, Cames van Batenburg, and I conjectured that every L-coloring of G can be reconfigured into every other L-coloring (at each step, recoloring a single vertex and maintaining a proper L-coloring) using at most n(G)&nbsp;+&nbsp;&mu;(G) steps. (Here n(G) is the order of G and &mu;(G) is its matching number.)  In these slides, we survey related results and prove two weaker forms of the conjecture.
+<br><br>
+
+</li><li><a href="slides/toroidal-Kempe-talk.pdf">In Most 6-regular Toroidal Graphs All 5-colorings are Kempe Equivalent</a><br>
+        <br style="line-height: 6px" />
+        An <font class="math">&alpha;,&beta;</font>-Kempe swap in a properly colored graph interchanges the colors on some component of the subgraph induced by colors <font class="math">&alpha;</font> and <font class="math">&beta;</font>. Two k-colorings of a graph are k-Kempe equivalent if we can form one from the other by a sequence of Kempe swaps (never using more than k colors).  Here we show that for most 6-regular toroidal graphs (of which there are infinitely many) all 5-colorings are
+Kempe equivalent.
+<br><br>
+
+</li><li><a href="slides/swappability-talk.pdf">Kempe Equivalent List Colorings</a><br>
+        <br style="line-height: 6px" />
+        <!--An <font class="math">&alpha;,&beta;</font>-Kempe swap in a properly colored graph interchanges the colors on some component of the subgraph induced by colors <font class="math">&alpha;</font> and <font class="math">&beta;</font>. Two k-colorings of a graph are k-Kempe equivalent if we can form one from the other by a sequence of Kempe swaps (never using more than k colors). -->
+(<i>k-Kempe equivalence</i> is defined in the previous paragraph.)
+Las Vergnas and Meyniel showed that if a graph is (k-1)-degenerate, then each pair of its k-colorings are k-Kempe equivalent. Mohar conjectured the same conclusion for connected k-regular
+            graphs. This was proved for k&nbsp;=&nbsp;3 by Feghali, Johnson, and Paulusma (with a single exception K<sub>2</sub>&#9744;K<sub>3</sub>, also called the 3-prism) and for k&nbsp;&ge;&nbsp;4 by Bonamy, Bousquet, Feghali, and Johnson.
+            In this paper we prove an analogous result for list-coloring. <br>
+        <br style="line-height: 6px" />
+
+        For a list-assignment L and an L-coloring <font class="math">&phi;</font>, a Kempe swap is called L-valid for <font class="math">&phi;</font> if performing the Kempe swap yields another L-coloring. Two L-colorings are called L-equivalent if we can form one from the other by a sequence of L-valid Kempe swaps. Let G be a connected k-regular graph with k&nbsp;&ge;&nbsp;3. We prove that if L is a k-assignment, then all L-colorings are L-equivalent (again with a single exception K<sub>2</sub>&#9744;K<sub>3</sub>).
+When k&nbsp;&ge;&nbsp;4, the proof is completely self-contained, so implies an alternate proof of the result of Bonamy et al.
+Our proofs rely on the following key lemma, which may be of independent interest. Let H be a graph such that for every degree-assignment L<sub>H</sub> all L<sub>H</sub>-colorings are L<sub>H</sub>-equivalent. If G is a connected graph that contains H as an induced subgraph, then for every degree-assignment L<sub>G</sub> for G all L<sub>G</sub>-colorings are L<sub>G</sub>-equivalent. 
+<br><br>
+
+</li><li>
+<a href="slides/near-bipartite-talk.pdf">Using the Potential Method to Color
+Near-bipartite Graphs</a><br>
+        <br style="line-height: 6px" />
+A graph is <i>near-bipartite</i> if we can partition its vertex set into sets I
+and F so that I is an independent set and F induces a forest.  All 2-colorable
+graphs are near-bipartite and all near-bipartite graphs are 3-colorable, and
+each containment is proper.  Determining if a graph is near-bipartite is
+NP-hard (not surprisingly).  We give a sufficient condition for a graph to be
+near-bipartite, and it is sharp infinitely often.
+<br><br>
+
+</li><li>
+<a href="slides/vertex-partitions-talk.pdf">Vertex Partitions into an Independent Set
+and a Forest with Each Component Small</a><br>
+        <br style="line-height: 6px" />
+This work refines the result in the previous paragraph.  We want to partition
+V(G) into sets
+I and F<sub>k</sub> so that I is an independent set and F induces a forest with
+each tree of order at most k.  We call this an (I,F<sub>k</sub>) partition.
+For each integer k &#8805; 2, we determine a sharp bound on mad(G) such that V(G)
+has an (I,F<sub>k</sub>) partition.
+For each k we construct an infinite family of examples showing our result is
+best possible.
+<!--Hendrey, Norin, and Wood asked for the largest function g(a,b) such that if
+mad(G) &lt; g(a,b) then V(G) has a partition into sets A and B such that
+mad(G[A]) &lt; a and mad(G[B]) &lt; b. They specifically asked for the value of
+g(1,b), which corresponds to the case that A is an independent set. Previously,
+the only values known were g(1,4/3) and g(1,2). We find the value of g(1,b)
+whenever 4/3 &lt; b &lt; 2.-->
+<br>
+<br>
+
+</li><li>
+<a href="slides/circular-coloring-talk.pdf">Circular Coloring of Planar
+Graphs</a><br>
+<br style="line-height: 6px" />
+We study sufficient conditions for a planar graph with large girth to have a homomorphism to
+an odd cycle.  This problem generalizes Grotzsch's Theorem that all triangle-free planar graphs are 3-colorable.
+Here we show that (if G is planar, then) girth at least 10 implies a homomorphism to C<sub>5</sub> and girth at least 16 implies
+a homomorphism to C<sub>7</sub>.
+<br><br>
+
+</li><li>
+<a href="slides/percolation-talk.pdf">Bootstrap Percolation Thresholds in Plane Tilings
+using Regular Polygons</a><br>
+        <br style="line-height: 6px" />
+Bootstrap Percolation models the spread of disease.  If a face is healthy, but
+has k infected neighbors, then the face becomes infected.  For a plane graph G,
+we randomly infect some of the faces (each independently, with probability p),
+and ask for the probability that eventually all faces become infected.  The
+<i>percolation threshold</i> is the largest k such that this probability is at
+least 1/2.  We find the thresholds for many tilings of the plane by regular
+polygons, including for all Archimedean lattices.
+<br><br>
+
+</li><li>
+<a href="slides/square-girth-5-talk.pdf">Coloring Squares of Planar Graphs of Girth
+5</a><br>
+        <br style="line-height: 6px" />
+This paper answers affirmatively a 2008 conjecture of Dvorak, Kral, Nejedly,
+Skrekovski that, for some constant D, for every planar graph G with girth at least
+5 and maximum degree at least D, the chromatic number of the square of G is at
+most D+2.  (They had proved the same for girth 6.)  We prove their conjecture in
+the more general setting of online list coloring.
+<br><br>
+</li><li>
+<a href="slides/slovakia-talk.pdf">Fractional Coloring of Planar Graphs and the
+Plane</a><br>
+        <br style="line-height: 6px" />
+This an invited talk that I gave at the 24<sup>th</sup> Workshop on Cycles and
+Colourings, in Slovakia.  It begins with a brief survey of fractional coloring,
+sketches the proof that planar graphs are 9/2-colorable (see below), then
+outlines a proof for a new lower bound on the fractional chromatic number of the
+plane (here we are coloring all points of the plane and two points get disjoint
+color sets if they are at distance exactly 1 in the plane).  I gave a <a href="slides/plane-fractional.pdf">related talk</a> at VCU that just presents the
+lower bound for fractionally coloring the plane.
+<br><br>
+</li><li>
+<a href="slides/planar-fractional-talk.pdf">Planar graphs are 9/2-colorable and have
+big independent sets</a>
+(Here's <a href="slides/planar-fractional-SFU.pdf">another version</a>
+for a more expert audience.)<br>
+        <br style="line-height: 6px" />
+The 4 Color Theorem says that every planar graph has a proper coloring with 4
+colors.  But the proof relies heavily
+on computers.  The 5 Color Theorem is analogous (but weaker), although it has a
+simple proof.  Here we prove something in between: a 9/2 Color Theorem, which
+does not need computers for the proof.
+<br><br>
+</li><li>
+<a href="slides/antimagic-odd-talk.pdf">Regular Graphs of Odd Degree are
+Antimagic</a><br>
+        <br style="line-height: 6px" />
+A labeling of a graph G is a bijection from its edges to the integers
+1,2,...,|E(G)|.  The sum at a vertex (given a labeling) is the sum of labels on
+edges incident to that vertex.  A labeling is antimagic if all of these sums are
+distinct.  We prove that every regular graph of odd degree (at least 3) has an
+antimagic labeling.
+<br><br>
+</li><li>
+<a href="slides/painting-squares-talk.pdf">Painting Squares with &#916;<sup>2</sup>-1
+colors</a>
+        <br style="line-height: 6px" />
+Here we consider the problem of (online) list-coloring the square of a graph
+G with maximum degree &#916;. We prove that &#916;<sup>2</sup>-1 colors
+suffice, except for the obvious case when G<sup>2</sup> has a clique of size at
+least &#916;<sup>2</sup>.
+<br><br>
+</li><li>
+<a href="slides/diff-eq-talk.pdf">
+Boundedness of Positive Solutions of the Reciprocal Max-Type Difference Equation
+x<sub>n</sub>=max<sub>1&lt;i&lt;t</sub>(A<sup>i</sup><sub>n</sub>-1/x<sub>n-i</sub>)
+with Periodic Parameters</a>
+        <br style="line-height: 6px" />
+This is a departure from what I normally do.  It's joint work with Candace
+Kent, my colleague at VCU.  The proofs use epsilons, deltas, and a bit of
+elementary number theory (but no graphs).
+<br><br>
+
+</li><li>Borodin and Kostochka conjectured that if G has maximum degree &#916; &#8805;
+9 and no clique of size &#916;, then the chromatic number of G is at most
+&#916;-1.  We prove partial results on this conjecture.
+(The three talks below are independent.)<br>
+&nbsp;&nbsp;talk 1: <a href="slides/big-cliques-talk.pdf">Graphs with &#967;=&#916;
+have big cliques</a> and the <a href="slides/big-cliques-talk-WestFest.pdf">West Fest
+version</a><br>
+&nbsp;&nbsp;talk 2: <a href="slides/BK-clawfree-talk.pdf">Coloring a claw-free graph
+with &#916;-1 colors</a><br>
+&nbsp;&nbsp;talk 3: <a href="slides/BK-equiv-talk.pdf">Conjectures equivalent to the
+Borodin-Kostochka Conjecture: Coloring a graph with &#916;-1 colors</a>
+<br><br>
+
+</li><li><a href="slides/spies-talk.pdf">Revolutionaries and Spies</a><br>
+        <br style="line-height: 6px" />
+We study a game on a graph G played by r <i>revolutionaries</i> and s <i>spies</i>. Initially, revolutionaries and then spies occupy vertices. In each subsequent round, each revolutionary may move to a neighboring vertex or not move, and then each spy has the same option. The revolutionaries win if m of them meet at some vertex having no spy (at the end of a round); the spies win if they can avoid this forever. We provide conditions for the spies to win on various classes of graphs.
+<br><br>
+
+</li><li><a href="slides/overlap-talk.pdf">Overlap Number of Graphs</a><br>
+        <br style="line-height: 6px" />
+An <i>overlap representation</i> of a graph G assigns sets to vertices so that vertices are adjacent if and only 
+if their assigned sets intersect with neither containing the other.  We prove upper bounds on the size of the base set
+needed for such a representation of all n-vertex graphs in various families such as trees, planar graphs, bipartite graphs, and all graphs.
+<br><br>
+
+</li><li><a href="slides/list-color-C&amp;C-talk.pdf">List colorings of K<sub>5</sub>-minor-free
+graphs with special list assignments</a>
+<br><br>
+
+</li><li><a href="slides/crossings-talk-updated.pdf">Crossings, Colorings, and Cliques</a><br>
+        <br style="line-height: 6px" />
+Albertson conjectured that if a graph G has chromatic number k, then its crossing number (minimum number of edge crossings in a 
+plane drawing of G) is at least the crossing number of K<sub>k</sub>.  Previously, this was know for all k &le; 6.  Here we extend
+it to all k &le; 12.
+<br><br>
+
+</li><li><a href="slides/72-talk.pdf">(7,2)-edge-choosability of Some 3-regular Graphs</a><br>
+        <br style="line-height: 6px" />
+In a 3-regular graph, a list-assignment L gives to each edge e a set L(e) of 7 available colors.
+We consider sufficient conditions under which we can choose a set of 2 colors for each edge e from L(e) such that any two edges 
+with a common endpoint choose disjoint sets of colors.
+<br><br>
+
+</li><li><a href="slides/starcoloring-talk.pdf">Star Coloring Planar Graphs with High Girth</a><br>
+        <br style="line-height: 6px" />
+A star coloring is a proper coloring in which each pair of colors induces a star forest (each component has at most one vertex with degree more than 1).  We prove that every planar graph with girth at least 13 has a star coloring that uses at most 4 colors.
+<br><br>
+
+</li><li><a href="slides/injective-talk.pdf">Injective Coloring</a><br>
+        <br style="line-height: 6px" />
+An <i>injective</i> coloring of a graph gives distinct colors to each pair of vertices with a common neighbor.
+The maximum average degree of graph G, denoted mad(G), is the largest average degree of all its subgraphs.
+Let G be a graph with maximum degree 3.  We show that G has an injective coloring (a) with 5 colors if mad(G)&lt; 36/13
+and (b) with 4 colors if mad(G)&lt; 5/2.
+<br><br>
+
+</li><li><a href="slides/discharging-talk-wide.pdf">Discharging and Reducibility: An Introduction by Example</a><br>
+        <br style="line-height: 6px" />
+This talk contains some content from the Star Coloring talk above, but has more background, and is aimed at a wider audience.
+<br> <br>
+</li><li>List-coloring the Square of a Subcubic Graph 
+<br>&nbsp;&nbsp;talk 1: <a href="slides/subcubic-talk-part1.pdf">General bounds</a>
+<br>&nbsp;&nbsp;talk 2: <a href="slides/subcubic-talk-part2.pdf">Planar graphs with high girth</a>
+<br> <br>
+</li><li><a href="slides/antimagic-talk.pdf">Antimagic labelings of regular bipartite graphs</a>
+<br><br>
+</li><li><a href="slides/edge-choosability-talk.pdf">Edge-choosability of planar graph with no kites</a>
+</li></ul>
+<br><br>
+<!--Back to my <a href="..">homepage</a>.-->
+
+ </td>
+            <td width=26%>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    </center>
+
+
+</body></html>
