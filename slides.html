@@ -48,7 +48,7 @@ or on the page of <a href="writing.html">my writing</a>.
 
 <h2>Expository</h2>
 <ul>
-<li><a href="slides/k-critical-survey-talk.pdf">A Survey of k-critical Graphs</a><br>
+<li><a href="slides/k-critical-survey.pdf">A Survey of k-critical Graphs</a><br>
         <br style="line-height: 6px" /> 
 A graph G is <i>k-critical</i> if G has chromatic number k, but every subgraph of G has chromatic number less than k.
 This is a survey talk on k-critical graphs for a workshop at the American Institute of Mathematics (in Pasadena, CA)
@@ -69,7 +69,7 @@ multigraphs, we study a powerful recoloring tool, Tashkinov trees.
         <br style="line-height: 6px" />
 This is an expository talk, proving the famous result of Hoffman and Singleton
 that 
-Moore graphs exist only for regular graphs of degree 2, 3, 7, or (possibly) 57.
+Moore graphs exist only for degrees 2, 3, 7, and (possibly) 57.
 </li>
 <br>
 
@@ -86,7 +86,7 @@ Our presentation follows that in "Proofs from the Book".
 Flows</a><br>
         <br style="line-height: 6px" />
 For a planar graph, a nowhere-zero flow is equivalent to a
-face-coloring.  However, they are also defined for non-planar graphs.  In other
+face-coloring.  However, such flows are also defined for non-planar graphs.  In other
 words, nowhere-zero flows generalize the notion of face-coloring to non-planar
 graphs.
 </li>
@@ -103,7 +103,7 @@ using integer partitions.
 
 <h2>Research</h2>
 <font style="font-family: Lora; font-size: 18px">
-Below are the slides from most of my research talks. (But generally only one version of the slides is included, even if I gave the talk multiple times at different venues.)  They appear in approximate reverse chronological order.
+Below are the slides from most of my research talks. Generally only one version of the slides is included, even if I gave the talk multiple times at different venues.  They appear in approximate reverse chronological order.
 </font>
 <br>
 <br>
@@ -293,13 +293,17 @@ needed for such a representation of all n-vertex graphs in various families such
 <br><br>
 
 </li><li><a href="slides/list-color-C&amp;C-talk.pdf">List colorings of K<sub>5</sub>-minor-free
-graphs with special list assignments</a>
+graphs with special list assignments</a><br>
+        <br style="line-height: 6px" />
+Let G be a graph with no K<sub>5</sub>-minor.
+We consider list-assignments L such that |L(v)| &ge; min{d(v),k} for some integer k, and determine conditions under
+which G always has an L-coloring from such a list-assignment L.
 <br><br>
 
 </li><li><a href="slides/crossings-talk-updated.pdf">Crossings, Colorings, and Cliques</a><br>
         <br style="line-height: 6px" />
 Albertson conjectured that if a graph G has chromatic number k, then its crossing number (minimum number of edge crossings in a 
-plane drawing of G) is at least the crossing number of K<sub>k</sub>.  Previously, this was know for all k &le; 6.  Here we extend
+plane drawing of G) is at least the crossing number of K<sub>k</sub>.  Previously, this was known for all k &le; 6.  Here we extend
 it to all k &le; 12.
 <br><br>
 
@@ -319,21 +323,30 @@ A star coloring is a proper coloring in which each pair of colors induces a star
         <br style="line-height: 6px" />
 An <i>injective</i> coloring of a graph gives distinct colors to each pair of vertices with a common neighbor.
 The maximum average degree of graph G, denoted mad(G), is the largest average degree of all its subgraphs.
-Let G be a graph with maximum degree 3.  We show that G has an injective coloring (a) with 5 colors if mad(G)&lt; 36/13
-and (b) with 4 colors if mad(G)&lt; 5/2.
+Let G be a graph with maximum degree 3.  We show that G has an injective coloring (a) with 5 colors if mad(G) &lt; 36/13
+and (b) with 4 colors if mad(G) &lt; 5/2.
 <br><br>
 
 </li><li><a href="slides/discharging-talk-wide.pdf">Discharging and Reducibility: An Introduction by Example</a><br>
         <br style="line-height: 6px" />
 This talk contains some content from the Star Coloring talk above, but has more background, and is aimed at a wider audience.
 <br> <br>
-</li><li>List-coloring the Square of a Subcubic Graph 
-<br>&nbsp;&nbsp;talk 1: <a href="slides/subcubic-talk-part1.pdf">General bounds</a>
-<br>&nbsp;&nbsp;talk 2: <a href="slides/subcubic-talk-part2.pdf">Planar graphs with high girth</a>
+</li><li>List-coloring the Square of a Subcubic Graph
+<!--A graph is subcubic if its maximum degree is at most 3.  The square of a graph is formed from the original by adding an edge between each pair of vertices at distance 2.-->
+<br>&nbsp;&nbsp;talk 1: <a href="slides/subcubic-talk-part1.pdf">General bounds</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; We show that G<sup>2</sup> has list-chromatic number at most 8, unless G contains the Petersen graph (the square of which is K<sub>10</sub>).
+<br>&nbsp;&nbsp;talk 2: <a href="slides/subcubic-talk-part2.pdf">Planar graphs with high girth</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; When G is planar with girth at least 6 (resp. 7), the upper bound above can be improved (resp. improved even more).  
 <br> <br>
-</li><li><a href="slides/antimagic-talk.pdf">Antimagic labelings of regular bipartite graphs</a>
+</li><li><a href="slides/antimagic-talk.pdf">Antimagic labelings of regular bipartite graphs</a><br>
+        <br style="line-height: 6px" />
+A <i>labeling</i> of a graph G assigns the integers 1,...,|E(G)| bijectively to the edges of G.  The <i>sum at a vertex v</i> is the
+sum of the labels on edges incident to v.  A labeling is <i>antimagic</i> if the sums at all vertices are distinct.  We prove that every regular bipartite graph (with degree at least 2) has a labeling that is antimagic.
 <br><br>
-</li><li><a href="slides/edge-choosability-talk.pdf">Edge-choosability of planar graph with no kites</a>
+</li><li><a href="slides/edge-choosability-talk.pdf">Edge-choosability of planar graph with no kites</a><br>
+        <br style="line-height: 6px" />
+A <i>kite</i> is formed from K<sub>4</sub> by removing an edge.  Let G be a planar graph with no kites and with &Delta; &ge; 6.
+We show that G has an L-edge-coloring whenever |L(e)| = &Delta; + 1 for all e in G.
 </li></ul>
 <br><br>
 <!--Back to my <a href="..">homepage</a>.-->
