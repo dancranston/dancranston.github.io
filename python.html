@@ -52,12 +52,33 @@ that may be useful to others. The code is also available on <a href="https://git
         <a href="https://github.com/dancranston/graph-coloring-python/blob/main/equitable-colorings.ipynb" target="_blank" rel="noopener noreferrer">Equitable Colorings</a><br>
         <br style="line-height: 6px" />
         Algorithms for equitable colorings of sparse graphs, including computational experiments related to my paper
-        Equitably Coloring Planar and Outerplanar Graphs, <a href="https://arxiv.org/abs/2509.16123" target="_blank" rel="noopener noreferrer"><i>Equitably Coloring Planar and Outerplanar Graphs</i></a>
-        with Reem Mahmoud.
+        <a href="https://arxiv.org/abs/2509.16123" target="_blank" rel="noopener noreferrer"><i>Equitably Coloring Planar and 
+        Outerplanar Graphs</i></a> with Reem Mahmoud.
         Our work in that paper requires us to acyclically color planar graphs. So along the way we implement a 
         fast algorithm for acyclically 7-coloring any planar graph, based on an old result of Albertson and Berman; this may be of 
         independent interest.
         <br><br>
+    </li>
+    <li>
+        <a href="https://github.com/dancranston/graph-coloring-python/blob/main/correspondence-packing.ipynb" target="_blank" rel="noopener noreferrer">Equitable Colorings</a><br>
+        <br style="line-height: 6px" />
+        Algorithms for 5-choosability of planar graphs and packing 3 correspondence colorings, 
+        given any K<sub>5</sub>-minor free graph and a correspondence 6-cover. Includes a nice visualization for converting 
+        Thomassen's proof to a coloring algorithm that is very efficient! Related to 
+        <a href="https://arxiv.org/abs/2602.16692">Disjoint Correspondence Colorings for K<sub>5</sub>-Minor-free Graphs</a> 
+        by Wouter Cames van Batenburg, Daniel W. Cranston, and František Kardoš.
+    </li>
+    <li>
+        <a href="https://github.com/dancranston/graph-coloring-python/blob/main/sparse-recoloring.ipynb" target="_blank" rel="noopener noreferrer">Equitable Colorings</a><br>
+        <br style="line-height: 6px" />
+        Algorithms for reconfiguration of list-colorings in sparse graphs.
+        Based on the paper <a href="">List-Recoloring of Sparse Graphs</a>, by Daniel W. Cranston. Given a graph G, 
+        list assignment L, and L-colorings α,β, a reconfiguration sequence transforms α to β by recoloring one vertex at a time, 
+        so that each intermediate coloring is also a proper L-coloring. A key tool for growing a reconfiguration sequence for 
+        G − v to one for G is the so-called Extension Lemma, which we implement here. 
+        A naive implementation runs in time Θ(n<sup>2</sup>). But by using a custom type of treap as our data structure, 
+        we reduce this to time O(nlog n). This allows us to handle much larger graphs. 
+        Based on this technical advance, we implement two key results from the paper, and test them on large graphs.
     </li>
 </ul>
 
